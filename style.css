@@ -60,6 +60,7 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
+
 .hero {
     animation: fadeIn 1s ease-in-out;
 }
@@ -177,10 +178,7 @@ h2 {
 }
 
 footer {
-    background-image: url('/mnt/data/images/134191152876b8e0f8d7d3096c0967f8.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #ec5182;
     color: #f7eef3;
     padding: 2rem 0;
     text-align: center;
