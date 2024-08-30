@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    color: #F7CAC9;
+    color: #000000;
     padding: 2rem 0;
     text-align: center;
     background-image: url('images/134191152876b8e0f8d7d3096c0967f8.jpg');
@@ -26,7 +26,7 @@ header {
 }
 
 nav ul li a {
-    color: #F7CAC9;
+    color: #000000;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease, transform 0.3s ease;
