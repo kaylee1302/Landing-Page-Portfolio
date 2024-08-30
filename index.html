@@ -22,7 +22,15 @@
                 <p>My name is Kaylee Adeline Fu. I'm 16 years old. I was born on February 13, 2008. I am the oldest child in my family. I have two younger sisters. I am an IT student in Sekolah Cinta Kasih Tzu Chi. My hobbies are singing and listening to music. I have loved music ever since I was little. I grew up in a family who loves music and singing. My dream is to become a singer/content creator and hope to earn money and help my parents with it.</p>
             </div>
             <div class="about-photo">
-                <img src="images/Screenshot_2024-08-29_081135-removebg-preview.png" alt="Your Photo">
+                <div class="about-photo-carousel">
+                    <div class="carousel">
+                        <img src="images/photo1.png" alt="Photo 1">
+                        <img src="images/photo2.png" alt="Photo 2">
+                        <img src="images/photo3.png" alt="Photo 3">
+                    </div>
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>                
             </div>
         </div>
     </section>
@@ -57,5 +65,15 @@
         </div>
     </footer>
     
+    <script>
+        let currentSlide = 0;
+    
+        function changeSlide(direction) {
+            const carousel = document.querySelector('.carousel');
+            const slides = document.querySelectorAll('.carousel img');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    </script>    
 </body>
 </html>
